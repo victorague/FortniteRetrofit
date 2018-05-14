@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/idSwipe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_activity_backround"
+        android:columnCount="3"
+        android:rowCount="3"
+
+        tools:layout_editor_absoluteY="81dp">
+
+
+        <TextView
+            android:id="@+id/lblPartidasJugadas"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignBaseline="@+id/lblPuntuacion"
+            android:layout_alignBottom="@+id/lblPuntuacion"
+            android:layout_centerHorizontal="true"
+            android:text="Matches"
+            android:textAlignment="center"
+            android:textColor="@color/orange"
+            android:textSize="20dp"
+            tools:text="Matches" />
+
+        <TextView
+            android:id="@+id/lblVictorias"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/lblPartidasJugadas"
+            android:layout_alignBottom="@+id/lblPartidasJugadas"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:layout_toEndOf="@+id/lblPartidasJugadas"
+            android:layout_toRightOf="@+id/lblPartidasJugadas"
+            android:text="Won"
+            android:textAlignment="center"
+            android:textColor="@color/orange"
+            android:textSize="20dp"
+            tools:text="Won" />
+
+        <TextView
+            android:id="@+id/tvPuntuacion"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lblPuntuacion"
+
+            android:layout_alignStart="@+id/lblPuntuacion"
+            android:layout_below="@+id/lblPuntuacion"
+            android:layout_marginTop="11dp"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvPartidasJugadas"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignBaseline="@+id/tvPuntuacion"
+            android:layout_alignBottom="@+id/tvPuntuacion"
+            android:layout_alignLeft="@+id/lblPartidasJugadas"
+            android:layout_alignStart="@+id/lblPartidasJugadas"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvVictorias"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignBaseline="@+id/tvPartidasJugadas"
+            android:layout_alignBottom="@+id/tvPartidasJugadas"
+            android:layout_alignLeft="@+id/lblVictorias"
+            android:layout_alignStart="@+id/lblVictorias"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/lblBajasTotales"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tvPuntuacion"
+            android:layout_below="@+id/tvPuntuacion"
+            android:layout_marginLeft="38dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="50dp"
+            android:text="Kills"
+            android:textAlignment="center"
+            android:textColor="@color/orange"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/lblPuntuacion"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonReload"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="149dp"
+            android:layout_toLeftOf="@+id/lblPartidasJugadas"
+            android:layout_toStartOf="@+id/lblPartidasJugadas"
+            android:text="Score"
+            android:textAlignment="center"
+            android:textColor="@color/orange"
+            android:textSize="20dp"
+            tools:text="Score" />
+
+        <TextView
+            android:id="@+id/lblRatio"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/lblBajasTotales"
+            android:layout_alignBottom="@+id/lblBajasTotales"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2"
+            android:text="K/D Ratio"
+            android:textAlignment="center"
+            android:textColor="@color/orange"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvRatio"
+            android:layout_width="100dp"
+
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvBajasTotales"
+            android:layout_alignBottom="@+id/tvBajasTotales"
+            android:layout_alignLeft="@+id/lblRatio"
+            android:layout_alignStart="@+id/lblRatio"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvBajasTotales"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignLeft="@+id/lblBajasTotales"
+            android:layout_alignStart="@+id/lblBajasTotales"
+            android:layout_below="@+id/lblBajasTotales"
+            android:layout_marginTop="11dp"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_height="45dp"
+
+            android:layout_above="@+id/tvPlataforma"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/tvPlataforma"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textStyle="bold"
+            android:layout_above="@+id/lblPartidasJugadas"
+            android:layout_alignEnd="@+id/textView2"
+            android:layout_alignRight="@+id/textView2"
+            android:layout_marginBottom="27dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/lblPorVict"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvPartidasJugadas"
+            android:layout_alignStart="@+id/tvPartidasJugadas"
+            android:layout_below="@+id/tvRatio"
+            android:layout_marginTop="49dp"
+            android:text="Win %"
+            android:textAlignment="center"
+            android:textColor="@color/orange"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvPorVict"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lblPorVict"
+            android:layout_alignStart="@+id/lblPorVict"
+            android:layout_below="@+id/lblPorVict"
+            android:layout_marginTop="12dp"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="Tip: Swipe down to reload!" />
+
+        <ImageView
+            android:id="@+id/ivPlataforma"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/tvPorVict"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp"
+            app:srcCompat="@drawable/cross" />
+
+    </RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>
